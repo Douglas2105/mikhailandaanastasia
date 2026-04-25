@@ -81,20 +81,13 @@
 
         .hero-bg {
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             z-index: 0;
         }
 
-        /* Layered floral backgrounds */
         .hero-bg-layer {
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             background-size: cover;
             background-position: center;
         }
@@ -102,7 +95,7 @@
         .hero-bg-layer-1 {
             background-image: url('https://image.qwenlm.ai/public_source/3c90f60a-c3aa-4cb1-9c2f-2b37fa2a6d85/1e44ec736-a18e-48b2-8e53-6a92254a9a9c.png');
             background-size: 150% 150%;
-            background-position: center center;
+            background-position: center;
             opacity: 0.2;
             filter: blur(1px);
         }
@@ -124,10 +117,7 @@
 
         .hero-overlay {
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             background: linear-gradient(
                 135deg,
                 rgba(253, 248, 240, 0.85) 0%,
@@ -143,13 +133,10 @@
             z-index: 2;
         }
 
-        /* Corner flower decorations */
         .hero-corner-flower-tl {
             position: absolute;
-            top: -10px;
-            left: -10px;
-            width: 220px;
-            height: 220px;
+            top: -10px; left: -10px;
+            width: 220px; height: 220px;
             opacity: 0.3;
             z-index: 1;
             pointer-events: none;
@@ -157,10 +144,8 @@
 
         .hero-corner-flower-br {
             position: absolute;
-            bottom: -10px;
-            right: -10px;
-            width: 220px;
-            height: 220px;
+            bottom: -10px; right: -10px;
+            width: 220px; height: 220px;
             opacity: 0.3;
             z-index: 1;
             pointer-events: none;
@@ -169,10 +154,8 @@
 
         .hero-corner-flower-tr {
             position: absolute;
-            top: 20px;
-            right: 30px;
-            width: 160px;
-            height: 160px;
+            top: 20px; right: 30px;
+            width: 160px; height: 160px;
             opacity: 0.2;
             z-index: 1;
             pointer-events: none;
@@ -181,10 +164,8 @@
 
         .hero-corner-flower-bl {
             position: absolute;
-            bottom: 20px;
-            left: 30px;
-            width: 160px;
-            height: 160px;
+            bottom: 20px; left: 30px;
+            width: 160px; height: 160px;
             opacity: 0.2;
             z-index: 1;
             pointer-events: none;
@@ -192,8 +173,7 @@
         }
 
         .hero-wreath {
-            width: 160px;
-            height: 160px;
+            width: 160px; height: 160px;
             margin-bottom: 1rem;
             opacity: 0.65;
         }
@@ -205,7 +185,6 @@
             text-transform: uppercase;
             color: var(--text-light);
             margin-bottom: 1rem;
-            font-weight: 400;
         }
 
         .hero-names {
@@ -213,8 +192,6 @@
             font-size: clamp(2.5rem, 7vw, 5rem);
             color: var(--text-dark);
             margin-bottom: 0.3rem;
-            position: relative;
-            z-index: 1;
         }
 
         .hero-names .amp {
@@ -229,8 +206,6 @@
             color: var(--text-medium);
             letter-spacing: 0.15em;
             margin-bottom: 0.5rem;
-            position: relative;
-            z-index: 1;
         }
 
         .hero-date-time span {
@@ -244,12 +219,9 @@
         }
 
         .hero-line {
-            width: 60px;
-            height: 1px;
+            width: 60px; height: 1px;
             background: var(--gold);
             margin: 1.5rem auto;
-            position: relative;
-            z-index: 1;
         }
 
         .hero-btn {
@@ -265,8 +237,6 @@
             text-decoration: none;
             cursor: pointer;
             transition: all 0.4s ease;
-            position: relative;
-            z-index: 1;
             margin-top: 1rem;
         }
 
@@ -295,8 +265,7 @@
         }
 
         .scroll-indicator svg {
-            width: 20px;
-            height: 20px;
+            width: 20px; height: 20px;
             stroke: var(--gold);
         }
 
@@ -323,8 +292,7 @@
         }
 
         .section-divider .divider-ornament {
-            width: 40px;
-            height: 40px;
+            width: 40px; height: 40px;
             color: var(--gold);
             opacity: 0.5;
         }
@@ -390,9 +358,7 @@
         .timeline::before {
             content: '';
             position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
+            left: 0; top: 0; bottom: 0;
             width: 1px;
             background: linear-gradient(to bottom, var(--gold-light), var(--sage), var(--gold-light));
         }
@@ -406,10 +372,8 @@
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -6px;
-            top: 1.5rem;
-            width: 11px;
-            height: 11px;
+            left: -6px; top: 1.5rem;
+            width: 11px; height: 11px;
             border-radius: 50%;
             background: var(--cream);
             border: 2px solid var(--gold);
@@ -439,8 +403,7 @@
         }
 
         .venue-icon {
-            width: 40px;
-            height: 40px;
+            width: 40px; height: 40px;
             margin: 0 auto 1rem;
             color: var(--gold);
         }
@@ -479,8 +442,7 @@
         }
 
         .color-swatch {
-            width: 44px;
-            height: 44px;
+            width: 44px; height: 44px;
             border-radius: 50%;
             border: 2px solid var(--white);
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -674,8 +636,7 @@
 
         .submit-btn .spinner {
             display: none;
-            width: 18px;
-            height: 18px;
+            width: 18px; height: 18px;
             border: 2px solid rgba(255,255,255,0.3);
             border-top-color: white;
             border-radius: 50%;
@@ -687,7 +648,6 @@
             to { transform: rotate(360deg); }
         }
 
-        /* Success message */
         .success-message {
             display: none;
             text-align: center;
@@ -699,9 +659,31 @@
             animation: fadeInUp 0.6s ease-out;
         }
 
+        .error-toast {
+            display: none;
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-20px);
+            background: #E8C4B8;
+            color: var(--text-dark);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            z-index: 1000;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+
+        .error-toast.show {
+            display: block;
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
         .success-icon {
-            width: 60px;
-            height: 60px;
+            width: 60px; height: 60px;
             margin: 0 auto 1rem;
             background: linear-gradient(135deg, var(--sage), var(--sage-dark));
             border-radius: 50%;
@@ -711,8 +693,7 @@
         }
 
         .success-icon svg {
-            width: 28px;
-            height: 28px;
+            width: 28px; height: 28px;
             stroke: white;
         }
 
@@ -728,14 +709,8 @@
         }
 
         @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         /* ===== COUNTDOWN ===== */
@@ -804,8 +779,7 @@
         }
 
         .footer-wreath {
-            width: 180px;
-            height: 180px;
+            width: 180px; height: 180px;
             margin: 0 auto 1.5rem;
         }
 
@@ -845,8 +819,7 @@
         }
 
         .contact-link svg {
-            width: 18px;
-            height: 18px;
+            width: 18px; height: 18px;
             stroke: currentColor;
         }
 
@@ -858,63 +831,21 @@
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 640px) {
-            .hero {
-                min-height: 100svh;
-                padding: 1.5rem;
-            }
-
-            .hero-corner-flower-tl,
-            .hero-corner-flower-br {
-                width: 140px;
-                height: 140px;
-            }
-
-            .hero-corner-flower-tr,
-            .hero-corner-flower-bl {
-                width: 100px;
-                height: 100px;
-            }
-
-            .hero-wreath {
-                width: 120px;
-                height: 120px;
-            }
-
-            .rsvp-form {
-                padding: 1.8rem 1.3rem;
-            }
-
-            .countdown {
-                gap: 1rem;
-            }
-
-            .countdown-number {
-                min-width: 55px;
-            }
-
-            .countdown-separator {
-                font-size: 1.5rem;
-            }
-
-            .footer-contacts {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .timeline {
-                padding-left: 1.5rem;
-            }
-
-            .footer-wreath {
-                width: 140px;
-                height: 140px;
-            }
+            .hero { min-height: 100svh; padding: 1.5rem; }
+            .hero-corner-flower-tl, .hero-corner-flower-br { width: 140px; height: 140px; }
+            .hero-corner-flower-tr, .hero-corner-flower-bl { width: 100px; height: 100px; }
+            .hero-wreath { width: 120px; height: 120px; }
+            .rsvp-form { padding: 1.8rem 1.3rem; }
+            .countdown { gap: 1rem; }
+            .countdown-number { min-width: 55px; }
+            .countdown-separator { font-size: 1.5rem; }
+            .footer-contacts { flex-direction: column; gap: 1rem; }
+            .timeline { padding-left: 1.5rem; }
+            .footer-wreath { width: 140px; height: 140px; }
         }
 
         @media (max-width: 380px) {
-            .radio-group {
-                flex-direction: column;
-            }
+            .radio-group { flex-direction: column; }
         }
 
         /* ===== FLOATING PETALS ===== */
@@ -928,9 +859,11 @@
 </head>
 <body>
 
+    <!-- Error Toast -->
+    <div class="error-toast" id="errorToast"></div>
+
     <!-- ===== HERO ===== -->
     <section class="hero" id="hero">
-        <!-- Floral Background Layers -->
         <div class="hero-bg">
             <div class="hero-bg-layer hero-bg-layer-1"></div>
             <div class="hero-bg-layer hero-bg-layer-2"></div>
@@ -938,38 +871,28 @@
         </div>
         <div class="hero-overlay"></div>
 
-        <!-- Corner Flower Decorations -->
         <svg class="hero-corner-flower-tl" viewBox="0 0 200 200" fill="none">
             <g opacity="0.8">
-                <!-- Peony flower -->
                 <circle cx="60" cy="50" r="28" fill="#F4E0D6" opacity="0.7"/>
                 <circle cx="60" cy="50" r="20" fill="#E8C4B8" opacity="0.5"/>
                 <circle cx="60" cy="50" r="12" fill="#F5EDE0" opacity="0.6"/>
                 <circle cx="60" cy="50" r="5" fill="#C9A96E" opacity="0.4"/>
-                <!-- Rose -->
                 <circle cx="120" cy="80" r="22" fill="#E8C4B8" opacity="0.6"/>
                 <circle cx="120" cy="80" r="15" fill="#D4A097" opacity="0.4"/>
                 <circle cx="120" cy="80" r="8" fill="#F4E0D6" opacity="0.5"/>
                 <circle cx="120" cy="80" r="3" fill="#C9A96E" opacity="0.35"/>
-                <!-- Bud -->
                 <ellipse cx="40" cy="120" rx="12" ry="16" fill="#F4E0D6" opacity="0.5" transform="rotate(-20 40 120)"/>
                 <ellipse cx="40" cy="120" rx="6" ry="10" fill="#E8C4B8" opacity="0.4" transform="rotate(-20 40 120)"/>
-                <!-- Leaves -->
                 <path d="M80 30 C90 25, 95 30, 90 40 C85 35, 80 35, 80 30Z" fill="#B5C4B1" opacity="0.5"/>
                 <path d="M140 60 C150 55, 155 60, 150 70 C145 65, 140 65, 140 60Z" fill="#B5C4B1" opacity="0.45"/>
                 <path d="M20 140 C30 135, 35 140, 30 150 C25 145, 20 145, 20 140Z" fill="#8FA68A" opacity="0.4"/>
                 <path d="M150 110 C158 105, 162 110, 158 118 C153 114, 150 114, 150 110Z" fill="#B5C4B1" opacity="0.35"/>
-                <!-- Small flowers -->
                 <circle cx="90" cy="130" r="8" fill="#F4E0D6" opacity="0.45"/>
                 <circle cx="90" cy="130" r="4" fill="#E8C4B8" opacity="0.35"/>
                 <circle cx="90" cy="130" r="2" fill="#C9A96E" opacity="0.3"/>
                 <circle cx="150" cy="150" r="6" fill="#E8C4B8" opacity="0.35"/>
                 <circle cx="150" cy="150" r="3" fill="#F4E0D6" opacity="0.3"/>
                 <circle cx="150" cy="150" r="1.5" fill="#C9A96E" opacity="0.25"/>
-                <!-- Extra leaves -->
-                <path d="M100 100 C110 95, 115 100, 110 108 C105 104, 100 104, 100 100Z" fill="#8FA68A" opacity="0.35"/>
-                <path d="M30 80 C40 75, 45 80, 40 88 C35 84, 30 84, 30 80Z" fill="#B5C4B1" opacity="0.3"/>
-                <path d="M170 80 C178 75, 182 80, 178 88 C173 84, 170 84, 170 80Z" fill="#B5C4B1" opacity="0.3"/>
             </g>
         </svg>
 
@@ -995,9 +918,6 @@
                 <circle cx="150" cy="150" r="6" fill="#E8C4B8" opacity="0.35"/>
                 <circle cx="150" cy="150" r="3" fill="#F4E0D6" opacity="0.3"/>
                 <circle cx="150" cy="150" r="1.5" fill="#C9A96E" opacity="0.25"/>
-                <path d="M100 100 C110 95, 115 100, 110 108 C105 104, 100 104, 100 100Z" fill="#8FA68A" opacity="0.35"/>
-                <path d="M30 80 C40 75, 45 80, 40 88 C35 84, 30 84, 30 80Z" fill="#B5C4B1" opacity="0.3"/>
-                <path d="M170 80 C178 75, 182 80, 178 88 C173 84, 170 84, 170 80Z" fill="#B5C4B1" opacity="0.3"/>
             </g>
         </svg>
 
@@ -1012,11 +932,8 @@
                 <circle cx="40" cy="90" r="5" fill="#F4E0D6" opacity="0.35"/>
                 <circle cx="40" cy="90" r="2" fill="#C9A96E" opacity="0.25"/>
                 <path d="M100 70 C110 65, 115 70, 110 80 C105 75, 100 75, 100 70Z" fill="#B5C4B1" opacity="0.4"/>
-                <path d="M120 30 C128 25, 132 30, 128 38 C123 34, 120 34, 120 30Z" fill="#8FA68A" opacity="0.35"/>
-                <path d="M20 120 C30 115, 35 120, 30 128 C25 124, 20 124, 20 120Z" fill="#B5C4B1" opacity="0.3"/>
                 <circle cx="120" cy="100" r="10" fill="#F4E0D6" opacity="0.35"/>
                 <circle cx="120" cy="100" r="5" fill="#E8C4B8" opacity="0.25"/>
-                <circle cx="120" cy="100" r="2" fill="#C9A96E" opacity="0.2"/>
             </g>
         </svg>
 
@@ -1031,32 +948,23 @@
                 <circle cx="40" cy="90" r="5" fill="#F4E0D6" opacity="0.35"/>
                 <circle cx="40" cy="90" r="2" fill="#C9A96E" opacity="0.25"/>
                 <path d="M100 70 C110 65, 115 70, 110 80 C105 75, 100 75, 100 70Z" fill="#B5C4B1" opacity="0.4"/>
-                <path d="M120 30 C128 25, 132 30, 128 38 C123 34, 120 34, 120 30Z" fill="#8FA68A" opacity="0.35"/>
-                <path d="M20 120 C30 115, 35 120, 30 128 C25 124, 20 124, 20 120Z" fill="#B5C4B1" opacity="0.3"/>
                 <circle cx="120" cy="100" r="10" fill="#F4E0D6" opacity="0.35"/>
                 <circle cx="120" cy="100" r="5" fill="#E8C4B8" opacity="0.25"/>
-                <circle cx="120" cy="100" r="2" fill="#C9A96E" opacity="0.2"/>
             </g>
         </svg>
 
         <div class="hero-content">
-            <!-- Center Wreath SVG -->
             <svg class="hero-wreath fade-in" viewBox="0 0 200 200" fill="none">
                 <circle cx="100" cy="100" r="85" stroke="var(--sage)" stroke-width="1" opacity="0.3"/>
                 <circle cx="100" cy="100" r="80" stroke="var(--sage)" stroke-width="2" opacity="0.2"/>
-                <!-- Leaves top -->
                 <path d="M100 20 C90 30, 80 35, 70 38 C80 45, 90 50, 100 50 C110 50, 120 45, 130 38 C120 35, 110 30, 100 20Z" fill="var(--sage)" opacity="0.5"/>
                 <path d="M100 25 C93 33, 86 38, 78 42 C86 48, 94 52, 100 52 C106 52, 114 48, 122 42 C114 38, 107 33, 100 25Z" fill="var(--sage-dark)" opacity="0.4"/>
-                <!-- Leaves right -->
                 <path d="M180 100 C170 90, 165 80, 162 70 C155 80, 150 90, 150 100 C150 110, 155 120, 162 130 C165 120, 170 110, 180 100Z" fill="var(--sage)" opacity="0.5"/>
                 <path d="M175 100 C168 93, 162 86, 158 78 C152 86, 148 94, 148 100 C148 106, 152 114, 158 122 C162 114, 168 107, 175 100Z" fill="var(--sage-dark)" opacity="0.4"/>
-                <!-- Leaves bottom -->
                 <path d="M100 180 C90 170, 80 165, 70 162 C80 155, 90 150, 100 150 C110 150, 120 155, 130 162 C120 165, 110 170, 100 180Z" fill="var(--sage)" opacity="0.5"/>
                 <path d="M100 175 C93 168, 86 162, 78 158 C86 152, 94 148, 100 148 C106 148, 114 152, 122 158 C114 162, 107 168, 100 175Z" fill="var(--sage-dark)" opacity="0.4"/>
-                <!-- Leaves left -->
                 <path d="M20 100 C30 90, 35 80, 38 70 C45 80, 50 90, 50 100 C50 110, 45 120, 38 130 C35 120, 30 110, 20 100Z" fill="var(--sage)" opacity="0.5"/>
                 <path d="M25 100 C33 93, 38 86, 42 78 C48 86, 52 94, 52 100 C52 106, 48 114, 42 122 C38 114, 33 107, 25 100Z" fill="var(--sage-dark)" opacity="0.4"/>
-                <!-- Small flowers -->
                 <circle cx="55" cy="55" r="4" fill="var(--pink)" opacity="0.6"/>
                 <circle cx="55" cy="55" r="2" fill="var(--gold)" opacity="0.5"/>
                 <circle cx="145" cy="55" r="4" fill="var(--pink)" opacity="0.6"/>
@@ -1065,12 +973,10 @@
                 <circle cx="55" cy="145" r="2" fill="var(--gold)" opacity="0.5"/>
                 <circle cx="145" cy="145" r="4" fill="var(--pink)" opacity="0.6"/>
                 <circle cx="145" cy="145" r="2" fill="var(--gold)" opacity="0.5"/>
-                <!-- Additional leaves -->
                 <path d="M75 28 C68 35, 58 42, 48 46 C58 52, 68 58, 75 62 C82 58, 92 52, 75 28Z" fill="var(--sage)" opacity="0.35"/>
                 <path d="M125 28 C132 35, 142 42, 152 46 C142 52, 132 58, 125 62 C118 58, 108 52, 125 28Z" fill="var(--sage)" opacity="0.35"/>
                 <path d="M75 172 C68 165, 58 158, 48 154 C58 148, 68 142, 75 138 C82 142, 92 148, 75 172Z" fill="var(--sage)" opacity="0.35"/>
                 <path d="M125 172 C132 165, 142 158, 152 154 C142 148, 132 142, 125 138 C118 142, 108 148, 125 172Z" fill="var(--sage)" opacity="0.35"/>
-                <!-- Tiny gold dots -->
                 <circle cx="75" cy="40" r="1.5" fill="var(--gold)" opacity="0.4"/>
                 <circle cx="125" cy="40" r="1.5" fill="var(--gold)" opacity="0.4"/>
                 <circle cx="40" cy="75" r="1.5" fill="var(--gold)" opacity="0.4"/>
@@ -1129,7 +1035,6 @@
             Будем ждать вас с нетерпением!
         </p>
 
-        <!-- Venue -->
         <div class="venue-card fade-in delay-2">
             <svg class="venue-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
@@ -1142,7 +1047,6 @@
             </p>
         </div>
 
-        <!-- Schedule -->
         <div class="schedule fade-in delay-2">
             <h3 class="schedule-title">Расписание</h3>
             <div class="timeline">
@@ -1169,7 +1073,6 @@
             </div>
         </div>
 
-        <!-- Dress Code -->
         <div class="dresscode fade-in delay-3">
             <h3 class="dresscode-title">Дресс-код</h3>
             <p class="dresscode-note" style="margin-bottom: 1rem; font-style: normal; color: var(--text-medium);">
@@ -1203,34 +1106,12 @@
 
         <div class="rsvp-form fade-in delay-2" id="rsvpFormContainer">
             <form id="rsvpForm" novalidate>
-                <!-- Name -->
                 <div class="form-group">
                     <label for="guestName">Имя и фамилия <span class="required">*</span></label>
-                    <input
-                        type="text"
-                        id="guestName"
-                        class="form-control"
-                        placeholder="Введите ваше имя"
-                        required
-                        autocomplete="name"
-                    >
+                    <input type="text" id="guestName" class="form-control" placeholder="Введите ваше имя" required autocomplete="name">
                     <div class="error-message" id="nameError">Пожалуйста, введите ваше имя</div>
                 </div>
 
-                <!-- Guests count -->
-                <div class="form-group">
-                    <label for="guestCount">Количество гостей <span class="required">*</span></label>
-                    <select id="guestCount" class="form-control" required>
-                        <option value="" disabled selected>Выберите количество</option>
-                        <option value="1">1 гость</option>
-                        <option value="2">2 гостя</option>
-                        <option value="3">3 гостя</option>
-                        <option value="4">4 гостя</option>
-                    </select>
-                    <div class="error-message" id="countError">Пожалуйста, укажите количество гостей</div>
-                </div>
-
-                <!-- Attendance -->
                 <div class="form-group">
                     <label>Присутствие <span class="required">*</span></label>
                     <div class="radio-group">
@@ -1246,26 +1127,12 @@
                     <div class="error-message" id="attendanceError">Пожалуйста, выберите вариант</div>
                 </div>
 
-                <!-- Allergies / preferences -->
-                <div class="form-group">
-                    <label for="preferences">Аллергии или пожелания по меню</label>
-                    <textarea
-                        id="preferences"
-                        class="form-control"
-                        rows="3"
-                        placeholder="Расскажите, если есть ограничения в питании"
-                        style="resize: vertical;"
-                    ></textarea>
-                </div>
-
-                <!-- Submit -->
                 <button type="submit" class="submit-btn" id="submitBtn">
                     <span class="btn-text">Отправить подтверждение</span>
                     <div class="spinner" id="spinner"></div>
                 </button>
             </form>
 
-            <!-- Success message -->
             <div class="success-message" id="successMessage">
                 <div class="success-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1306,7 +1173,6 @@
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer">
-        <!-- Circular Wreath - NO WHITE BACKGROUND -->
         <svg class="footer-wreath fade-in" viewBox="0 0 300 300" fill="none">
             <defs>
                 <linearGradient id="wreathGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -1319,79 +1185,30 @@
                 </linearGradient>
             </defs>
             <g transform="translate(150, 150)">
-                <g transform="rotate(0)">
-                    <path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/>
-                </g>
-                <g transform="rotate(15)">
-                    <path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/>
-                </g>
-                <g transform="rotate(30)">
-                    <path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/>
-                </g>
-                <g transform="rotate(45)">
-                    <path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/>
-                </g>
-                <g transform="rotate(60)">
-                    <path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/>
-                </g>
-                <g transform="rotate(75)">
-                    <path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/>
-                </g>
-                <g transform="rotate(90)">
-                    <path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/>
-                </g>
-                <g transform="rotate(105)">
-                    <path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/>
-                </g>
-                <g transform="rotate(120)">
-                    <path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/>
-                </g>
-                <g transform="rotate(135)">
-                    <path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/>
-                </g>
-                <g transform="rotate(150)">
-                    <path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/>
-                </g>
-                <g transform="rotate(165)">
-                    <path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/>
-                </g>
-                <g transform="rotate(180)">
-                    <path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/>
-                </g>
-                <g transform="rotate(195)">
-                    <path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/>
-                </g>
-                <g transform="rotate(210)">
-                    <path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/>
-                </g>
-                <g transform="rotate(225)">
-                    <path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/>
-                </g>
-                <g transform="rotate(240)">
-                    <path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/>
-                </g>
-                <g transform="rotate(255)">
-                    <path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/>
-                </g>
-                <g transform="rotate(270)">
-                    <path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/>
-                </g>
-                <g transform="rotate(285)">
-                    <path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/>
-                </g>
-                <g transform="rotate(300)">
-                    <path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/>
-                </g>
-                <g transform="rotate(315)">
-                    <path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/>
-                </g>
-                <g transform="rotate(330)">
-                    <path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/>
-                </g>
-                <g transform="rotate(345)">
-                    <path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/>
-                </g>
-                <!-- Flowers on wreath -->
+                <g transform="rotate(0)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
+                <g transform="rotate(15)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
+                <g transform="rotate(30)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
+                <g transform="rotate(45)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
+                <g transform="rotate(60)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
+                <g transform="rotate(75)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
+                <g transform="rotate(90)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
+                <g transform="rotate(105)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
+                <g transform="rotate(120)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
+                <g transform="rotate(135)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
+                <g transform="rotate(150)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
+                <g transform="rotate(165)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
+                <g transform="rotate(180)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
+                <g transform="rotate(195)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
+                <g transform="rotate(210)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
+                <g transform="rotate(225)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
+                <g transform="rotate(240)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
+                <g transform="rotate(255)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
+                <g transform="rotate(270)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
+                <g transform="rotate(285)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
+                <g transform="rotate(300)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
+                <g transform="rotate(315)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
+                <g transform="rotate(330)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
+                <g transform="rotate(345)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
                 <circle cx="0" cy="-105" r="6" fill="url(#wreathGrad2)" opacity="0.55"/>
                 <circle cx="0" cy="-105" r="2.5" fill="var(--gold)" opacity="0.5"/>
                 <circle cx="75" cy="75" r="6" fill="url(#wreathGrad2)" opacity="0.55"/>
@@ -1404,9 +1221,7 @@
                 <circle cx="-105" cy="0" r="2.5" fill="var(--gold)" opacity="0.5"/>
                 <circle cx="0" cy="105" r="6" fill="url(#wreathGrad2)" opacity="0.55"/>
                 <circle cx="0" cy="105" r="2.5" fill="var(--gold)" opacity="0.5"/>
-                <!-- Inner ring -->
                 <circle cx="0" cy="0" r="80" stroke="var(--sage)" stroke-width="0.5" opacity="0.2"/>
-                <!-- Gold dots scattered -->
                 <circle cx="38" cy="-98" r="2" fill="var(--gold)" opacity="0.4"/>
                 <circle cx="-38" cy="-98" r="2" fill="var(--gold)" opacity="0.4"/>
                 <circle cx="98" cy="38" r="2" fill="var(--gold)" opacity="0.4"/>
@@ -1440,6 +1255,19 @@
     </footer>
 
     <script>
+        // =============================================
+        // НАСТРОЙКИ TELEGRAM — ЗАПОЛНИТЕ СВОИ ДАННЫЕ
+        // =============================================
+        var TG_BOT_TOKEN = '8457614052:AAGSOO5Gh5taZHEFXhftZ0bmOnBCQ-xuaiA';
+        var TG_CHAT_ID = '5012449006';
+
+        // Как получить:
+        // 1. Создайте бота через @BotFather в Telegram, получите токен
+        // 2. Напишите своему боту /start
+        // 3. Откройте https://api.telegram.org/bot<ТОКЕН>/getUpdates
+        //    и найдите chat.id в ответе — это ваш TG_CHAT_ID
+        // =============================================
+
         // ===== SCROLL ANIMATIONS =====
         (function() {
             var animatedElements = document.querySelectorAll('.fade-in');
@@ -1504,7 +1332,7 @@
             setInterval(updateCountdown, 1000);
         })();
 
-        // ===== RSVP FORM =====
+        // ===== RSVP FORM WITH TELEGRAM =====
         (function() {
             var form = document.getElementById('rsvpForm');
             var submitBtn = document.getElementById('submitBtn');
@@ -1527,6 +1355,15 @@
                 } else {
                     field.classList.remove('error');
                 }
+            }
+
+            function showToast(message) {
+                var toast = document.getElementById('errorToast');
+                toast.textContent = message;
+                toast.classList.add('show');
+                setTimeout(function() {
+                    toast.classList.remove('show');
+                }, 3000);
             }
 
             function validateForm() {
@@ -1591,15 +1428,89 @@
                     return;
                 }
 
+                // Собираем данные формы
+                var guestName = document.getElementById('guestName').value.trim();
+                var guestCount = document.getElementById('guestCount').value;
+                var attendance = document.querySelector('input[name="attendance"]:checked').value;
+                var preferences = document.getElementById('preferences').value.trim();
+
+                var attendanceText = attendance === 'yes' ? '✅ Да, приду' : '❌ Не смогу';
+                var guestCountLabels = {
+                    '1': '1 гость',
+                    '2': '2 гостя',
+                    '3': '3 гостя',
+                    '4': '4 гостя'
+                };
+
+                // Формируем сообщение для Telegram
+                var message = '💌 <b>Новый ответ на приглашение</b>\n\n';
+                message += '👤 <b>Имя:</b> ' + escapeHtml(guestName) + '\n';
+                message += '👥 <b>Количество гостей:</b> ' + (guestCountLabels[guestCount] || guestCount) + '\n';
+                message += '🎉 <b>Присутствие:</b> ' + attendanceText + '\n';
+
+                if (preferences) {
+                    message += '📝 <b>Пожелания:</b> ' + escapeHtml(preferences) + '\n';
+                }
+
+                var now = new Date();
+                var timestamp = now.toLocaleString('ru-RU', {
+                    day: '2-digit', month: '2-digit', year: 'numeric',
+                    hour: '2-digit', minute: '2-digit'
+                });
+                message += '\n⏰ <b>Время отправки:</b> ' + timestamp;
+
+                // Показываем загрузку
                 submitBtn.disabled = true;
                 btnText.style.display = 'none';
                 spinner.style.display = 'block';
 
-                setTimeout(function() {
-                    form.style.display = 'none';
-                    successMessage.classList.add('show');
-                }, 1500);
+                // Отправляем в Telegram
+                sendToTelegram(message);
             });
+
+            function escapeHtml(text) {
+                var div = document.createElement('div');
+                div.appendChild(document.createTextNode(text));
+                return div.innerHTML;
+            }
+
+            function sendToTelegram(message) {
+                var url = 'https://api.telegram.org/bot' + TG_BOT_TOKEN + '/sendMessage';
+
+                fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        chat_id: TG_CHAT_ID,
+                        text: message,
+                        parse_mode: 'HTML'
+                    })
+                })
+                .then(function(response) {
+                    if (!response.ok) {
+                        throw new Error('Ошибка сети');
+                    }
+                    return response.json();
+                })
+                .then(function(data) {
+                    if (data.ok) {
+                        // Успешно отправлено
+                        form.style.display = 'none';
+                        successMessage.classList.add('show');
+                    } else {
+                        throw new Error(data.description || 'Ошибка отправки');
+                    }
+                })
+                .catch(function(error) {
+                    console.error('Telegram API Error:', error);
+                    showToast('⚠️ Ошибка отправки. Попробуйте ещё раз.');
+                    submitBtn.disabled = false;
+                    btnText.style.display = 'inline';
+                    spinner.style.display = 'none';
+                });
+            }
         })();
 
         // ===== FLOATING PETALS =====
