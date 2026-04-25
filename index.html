@@ -1042,8 +1042,8 @@
             </svg>
             <h3 class="venue-name">Место проведения</h3>
             <p class="venue-address">
-                Адрес площадки будет указан дополнительно.<br>
-                Мы сообщим детали ближе к дате мероприятия.
+                Отдел ЗАГС Приморско-Ахтарского района</br>
+                Приморско-Ахтарск, ул. Ленина, 74
             </p>
         </div>
 
@@ -1052,23 +1052,11 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-time">15:00</div>
-                    <div class="timeline-event">Сбор гостей и welcome-зона</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">15:30</div>
                     <div class="timeline-event">Торжественная церемония</div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-time">16:30</div>
-                    <div class="timeline-event">Фуршет и поздравления</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">17:30</div>
-                    <div class="timeline-event">Банкет и развлекательная программа</div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-time">23:00</div>
-                    <div class="timeline-event">Завершение вечера</div>
+                    <div class="timeline-time">17:00</div>
+                    <div class="timeline-event">Банкет</div>
                 </div>
             </div>
         </div>
@@ -1261,11 +1249,6 @@
         var TG_BOT_TOKEN = '8457614052:AAGSOO5Gh5taZHEFXhftZ0bmOnBCQ-xuaiA';
         var TG_CHAT_ID = '5012449006';
 
-        // Как получить:
-        // 1. Создайте бота через @BotFather в Telegram, получите токен
-        // 2. Напишите своему боту /start
-        // 3. Откройте https://api.telegram.org/bot<ТОКЕН>/getUpdates
-        //    и найдите chat.id в ответе — это ваш TG_CHAT_ID
         // =============================================
 
         // ===== SCROLL ANIMATIONS =====
@@ -1380,16 +1363,6 @@
                     showError('nameError', false);
                 }
 
-                var countField = document.getElementById('guestCount');
-                if (!countField.value) {
-                    setFieldError(countField, true);
-                    showError('countError', true);
-                    isValid = false;
-                } else {
-                    setFieldError(countField, false);
-                    showError('countError', false);
-                }
-
                 var attendanceChecked = document.querySelector('input[name="attendance"]:checked');
                 if (!attendanceChecked) {
                     showError('attendanceError', true);
@@ -1404,11 +1377,6 @@
             document.getElementById('guestName').addEventListener('input', function() {
                 setFieldError(this, false);
                 showError('nameError', false);
-            });
-
-            document.getElementById('guestCount').addEventListener('change', function() {
-                setFieldError(this, false);
-                showError('countError', false);
             });
 
             document.querySelectorAll('input[name="attendance"]').forEach(function(radio) {
@@ -1430,27 +1398,14 @@
 
                 // Собираем данные формы
                 var guestName = document.getElementById('guestName').value.trim();
-                var guestCount = document.getElementById('guestCount').value;
                 var attendance = document.querySelector('input[name="attendance"]:checked').value;
-                var preferences = document.getElementById('preferences').value.trim();
 
                 var attendanceText = attendance === 'yes' ? '✅ Да, приду' : '❌ Не смогу';
-                var guestCountLabels = {
-                    '1': '1 гость',
-                    '2': '2 гостя',
-                    '3': '3 гостя',
-                    '4': '4 гостя'
-                };
 
                 // Формируем сообщение для Telegram
                 var message = '💌 <b>Новый ответ на приглашение</b>\n\n';
                 message += '👤 <b>Имя:</b> ' + escapeHtml(guestName) + '\n';
-                message += '👥 <b>Количество гостей:</b> ' + (guestCountLabels[guestCount] || guestCount) + '\n';
                 message += '🎉 <b>Присутствие:</b> ' + attendanceText + '\n';
-
-                if (preferences) {
-                    message += '📝 <b>Пожелания:</b> ' + escapeHtml(preferences) + '\n';
-                }
 
                 var now = new Date();
                 var timestamp = now.toLocaleString('ru-RU', {
@@ -1496,7 +1451,6 @@
                 })
                 .then(function(data) {
                     if (data.ok) {
-                        // Успешно отправлено
                         form.style.display = 'none';
                         successMessage.classList.add('show');
                     } else {
