@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,7 +44,10 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: 'Playfair Display', serif;
             font-weight: 400;
             line-height: 1.3;
@@ -61,10 +65,21 @@
             transform: translateY(0);
         }
 
-        .delay-1 { transition-delay: 0.15s; }
-        .delay-2 { transition-delay: 0.3s; }
-        .delay-3 { transition-delay: 0.45s; }
-        .delay-4 { transition-delay: 0.6s; }
+        .delay-1 {
+            transition-delay: 0.15s;
+        }
+
+        .delay-2 {
+            transition-delay: 0.3s;
+        }
+
+        .delay-3 {
+            transition-delay: 0.45s;
+        }
+
+        .delay-4 {
+            transition-delay: 0.6s;
+        }
 
         /* ===== HERO SECTION ===== */
         .hero {
@@ -81,13 +96,19 @@
 
         .hero-bg {
             position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             z-index: 0;
         }
 
         .hero-bg-layer {
             position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background-size: cover;
             background-position: center;
         }
@@ -117,14 +138,15 @@
 
         .hero-overlay {
             position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(
-                135deg,
-                rgba(253, 248, 240, 0.85) 0%,
-                rgba(244, 224, 214, 0.7) 40%,
-                rgba(245, 237, 224, 0.8) 70%,
-                rgba(253, 248, 240, 0.9) 100%
-            );
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg,
+                    rgba(253, 248, 240, 0.85) 0%,
+                    rgba(244, 224, 214, 0.7) 40%,
+                    rgba(245, 237, 224, 0.8) 70%,
+                    rgba(253, 248, 240, 0.9) 100%);
             z-index: 1;
         }
 
@@ -135,8 +157,10 @@
 
         .hero-corner-flower-tl {
             position: absolute;
-            top: -10px; left: -10px;
-            width: 220px; height: 220px;
+            top: -10px;
+            left: -10px;
+            width: 220px;
+            height: 220px;
             opacity: 0.3;
             z-index: 1;
             pointer-events: none;
@@ -144,8 +168,10 @@
 
         .hero-corner-flower-br {
             position: absolute;
-            bottom: -10px; right: -10px;
-            width: 220px; height: 220px;
+            bottom: -10px;
+            right: -10px;
+            width: 220px;
+            height: 220px;
             opacity: 0.3;
             z-index: 1;
             pointer-events: none;
@@ -154,8 +180,10 @@
 
         .hero-corner-flower-tr {
             position: absolute;
-            top: 20px; right: 30px;
-            width: 160px; height: 160px;
+            top: 20px;
+            right: 30px;
+            width: 160px;
+            height: 160px;
             opacity: 0.2;
             z-index: 1;
             pointer-events: none;
@@ -164,8 +192,10 @@
 
         .hero-corner-flower-bl {
             position: absolute;
-            bottom: 20px; left: 30px;
-            width: 160px; height: 160px;
+            bottom: 20px;
+            left: 30px;
+            width: 160px;
+            height: 160px;
             opacity: 0.2;
             z-index: 1;
             pointer-events: none;
@@ -173,7 +203,8 @@
         }
 
         .hero-wreath {
-            width: 160px; height: 160px;
+            width: 160px;
+            height: 160px;
             margin-bottom: 1rem;
             opacity: 0.65;
         }
@@ -219,7 +250,8 @@
         }
 
         .hero-line {
-            width: 60px; height: 1px;
+            width: 60px;
+            height: 1px;
             background: var(--gold);
             margin: 1.5rem auto;
         }
@@ -265,14 +297,28 @@
         }
 
         .scroll-indicator svg {
-            width: 20px; height: 20px;
+            width: 20px;
+            height: 20px;
             stroke: var(--gold);
         }
 
         @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-            40% { transform: translateX(-50%) translateY(-8px); }
-            60% { transform: translateX(-50%) translateY(-4px); }
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            40% {
+                transform: translateX(-50%) translateY(-8px);
+            }
+
+            60% {
+                transform: translateX(-50%) translateY(-4px);
+            }
         }
 
         /* ===== DIVIDER ===== */
@@ -292,7 +338,8 @@
         }
 
         .section-divider .divider-ornament {
-            width: 40px; height: 40px;
+            width: 40px;
+            height: 40px;
             color: var(--gold);
             opacity: 0.5;
         }
@@ -358,7 +405,9 @@
         .timeline::before {
             content: '';
             position: absolute;
-            left: 0; top: 0; bottom: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
             width: 1px;
             background: linear-gradient(to bottom, var(--gold-light), var(--sage), var(--gold-light));
         }
@@ -372,8 +421,10 @@
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -6px; top: 1.5rem;
-            width: 11px; height: 11px;
+            left: -6px;
+            top: 1.5rem;
+            width: 11px;
+            height: 11px;
             border-radius: 50%;
             background: var(--cream);
             border: 2px solid var(--gold);
@@ -403,7 +454,8 @@
         }
 
         .venue-icon {
-            width: 40px; height: 40px;
+            width: 40px;
+            height: 40px;
             margin: 0 auto 1rem;
             color: var(--gold);
         }
@@ -442,7 +494,8 @@
         }
 
         .color-swatch {
-            width: 44px; height: 44px;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
             border: 2px solid var(--white);
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -590,14 +643,14 @@
             border-color: var(--gold-light);
         }
 
-        .radio-option input:checked + .radio-label {
+        .radio-option input:checked+.radio-label {
             border-color: var(--gold);
             background: linear-gradient(135deg, rgba(201, 169, 110, 0.08), rgba(201, 169, 110, 0.03));
             color: var(--text-dark);
             box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.12);
         }
 
-        .radio-option input.error + .radio-label {
+        .radio-option input.error+.radio-label {
             border-color: var(--pink-deep);
         }
 
@@ -636,8 +689,9 @@
 
         .submit-btn .spinner {
             display: none;
-            width: 18px; height: 18px;
-            border: 2px solid rgba(255,255,255,0.3);
+            width: 18px;
+            height: 18px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
             border-top-color: white;
             border-radius: 50%;
             animation: spin 0.8s linear infinite;
@@ -645,7 +699,9 @@
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .success-message {
@@ -670,7 +726,7 @@
             padding: 12px 24px;
             border-radius: 8px;
             font-size: 0.9rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             z-index: 1000;
             opacity: 0;
             transition: all 0.3s ease;
@@ -683,7 +739,8 @@
         }
 
         .success-icon {
-            width: 60px; height: 60px;
+            width: 60px;
+            height: 60px;
             margin: 0 auto 1rem;
             background: linear-gradient(135deg, var(--sage), var(--sage-dark));
             border-radius: 50%;
@@ -693,7 +750,8 @@
         }
 
         .success-icon svg {
-            width: 28px; height: 28px;
+            width: 28px;
+            height: 28px;
             stroke: white;
         }
 
@@ -709,8 +767,15 @@
         }
 
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* ===== COUNTDOWN ===== */
@@ -767,8 +832,15 @@
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
         }
 
         /* ===== FOOTER ===== */
@@ -779,7 +851,8 @@
         }
 
         .footer-wreath {
-            width: 180px; height: 180px;
+            width: 180px;
+            height: 180px;
             margin: 0 auto 1.5rem;
         }
 
@@ -819,7 +892,8 @@
         }
 
         .contact-link svg {
-            width: 18px; height: 18px;
+            width: 18px;
+            height: 18px;
             stroke: currentColor;
         }
 
@@ -831,21 +905,63 @@
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 640px) {
-            .hero { min-height: 100svh; padding: 1.5rem; }
-            .hero-corner-flower-tl, .hero-corner-flower-br { width: 140px; height: 140px; }
-            .hero-corner-flower-tr, .hero-corner-flower-bl { width: 100px; height: 100px; }
-            .hero-wreath { width: 120px; height: 120px; }
-            .rsvp-form { padding: 1.8rem 1.3rem; }
-            .countdown { gap: 1rem; }
-            .countdown-number { min-width: 55px; }
-            .countdown-separator { font-size: 1.5rem; }
-            .footer-contacts { flex-direction: column; gap: 1rem; }
-            .timeline { padding-left: 1.5rem; }
-            .footer-wreath { width: 140px; height: 140px; }
+            .hero {
+                min-height: 100svh;
+                padding: 1.5rem;
+            }
+
+            .hero-corner-flower-tl,
+            .hero-corner-flower-br {
+                width: 140px;
+                height: 140px;
+            }
+
+            .hero-corner-flower-tr,
+            .hero-corner-flower-bl {
+                width: 100px;
+                height: 100px;
+            }
+
+            .hero-wreath {
+                width: 120px;
+                height: 120px;
+            }
+
+            .rsvp-form {
+                padding: 1.8rem 1.3rem;
+            }
+
+            .countdown {
+                gap: 1rem;
+            }
+
+            .countdown-number {
+                min-width: 55px;
+            }
+
+            .countdown-separator {
+                font-size: 1.5rem;
+            }
+
+            .footer-contacts {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .timeline {
+                padding-left: 1.5rem;
+            }
+
+            .footer-wreath {
+                width: 140px;
+                height: 140px;
+            }
         }
 
         @media (max-width: 380px) {
-            .radio-group { flex-direction: column; }
+            .radio-group {
+                flex-direction: column;
+            }
         }
 
         /* ===== FLOATING PETALS ===== */
@@ -857,6 +973,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Error Toast -->
@@ -873,118 +990,140 @@
 
         <svg class="hero-corner-flower-tl" viewBox="0 0 200 200" fill="none">
             <g opacity="0.8">
-                <circle cx="60" cy="50" r="28" fill="#F4E0D6" opacity="0.7"/>
-                <circle cx="60" cy="50" r="20" fill="#E8C4B8" opacity="0.5"/>
-                <circle cx="60" cy="50" r="12" fill="#F5EDE0" opacity="0.6"/>
-                <circle cx="60" cy="50" r="5" fill="#C9A96E" opacity="0.4"/>
-                <circle cx="120" cy="80" r="22" fill="#E8C4B8" opacity="0.6"/>
-                <circle cx="120" cy="80" r="15" fill="#D4A097" opacity="0.4"/>
-                <circle cx="120" cy="80" r="8" fill="#F4E0D6" opacity="0.5"/>
-                <circle cx="120" cy="80" r="3" fill="#C9A96E" opacity="0.35"/>
-                <ellipse cx="40" cy="120" rx="12" ry="16" fill="#F4E0D6" opacity="0.5" transform="rotate(-20 40 120)"/>
-                <ellipse cx="40" cy="120" rx="6" ry="10" fill="#E8C4B8" opacity="0.4" transform="rotate(-20 40 120)"/>
-                <path d="M80 30 C90 25, 95 30, 90 40 C85 35, 80 35, 80 30Z" fill="#B5C4B1" opacity="0.5"/>
-                <path d="M140 60 C150 55, 155 60, 150 70 C145 65, 140 65, 140 60Z" fill="#B5C4B1" opacity="0.45"/>
-                <path d="M20 140 C30 135, 35 140, 30 150 C25 145, 20 145, 20 140Z" fill="#8FA68A" opacity="0.4"/>
-                <path d="M150 110 C158 105, 162 110, 158 118 C153 114, 150 114, 150 110Z" fill="#B5C4B1" opacity="0.35"/>
-                <circle cx="90" cy="130" r="8" fill="#F4E0D6" opacity="0.45"/>
-                <circle cx="90" cy="130" r="4" fill="#E8C4B8" opacity="0.35"/>
-                <circle cx="90" cy="130" r="2" fill="#C9A96E" opacity="0.3"/>
-                <circle cx="150" cy="150" r="6" fill="#E8C4B8" opacity="0.35"/>
-                <circle cx="150" cy="150" r="3" fill="#F4E0D6" opacity="0.3"/>
-                <circle cx="150" cy="150" r="1.5" fill="#C9A96E" opacity="0.25"/>
+                <circle cx="60" cy="50" r="28" fill="#F4E0D6" opacity="0.7" />
+                <circle cx="60" cy="50" r="20" fill="#E8C4B8" opacity="0.5" />
+                <circle cx="60" cy="50" r="12" fill="#F5EDE0" opacity="0.6" />
+                <circle cx="60" cy="50" r="5" fill="#C9A96E" opacity="0.4" />
+                <circle cx="120" cy="80" r="22" fill="#E8C4B8" opacity="0.6" />
+                <circle cx="120" cy="80" r="15" fill="#D4A097" opacity="0.4" />
+                <circle cx="120" cy="80" r="8" fill="#F4E0D6" opacity="0.5" />
+                <circle cx="120" cy="80" r="3" fill="#C9A96E" opacity="0.35" />
+                <ellipse cx="40" cy="120" rx="12" ry="16" fill="#F4E0D6" opacity="0.5" transform="rotate(-20 40 120)" />
+                <ellipse cx="40" cy="120" rx="6" ry="10" fill="#E8C4B8" opacity="0.4" transform="rotate(-20 40 120)" />
+                <path d="M80 30 C90 25, 95 30, 90 40 C85 35, 80 35, 80 30Z" fill="#B5C4B1" opacity="0.5" />
+                <path d="M140 60 C150 55, 155 60, 150 70 C145 65, 140 65, 140 60Z" fill="#B5C4B1" opacity="0.45" />
+                <path d="M20 140 C30 135, 35 140, 30 150 C25 145, 20 145, 20 140Z" fill="#8FA68A" opacity="0.4" />
+                <path d="M150 110 C158 105, 162 110, 158 118 C153 114, 150 114, 150 110Z" fill="#B5C4B1"
+                    opacity="0.35" />
+                <circle cx="90" cy="130" r="8" fill="#F4E0D6" opacity="0.45" />
+                <circle cx="90" cy="130" r="4" fill="#E8C4B8" opacity="0.35" />
+                <circle cx="90" cy="130" r="2" fill="#C9A96E" opacity="0.3" />
+                <circle cx="150" cy="150" r="6" fill="#E8C4B8" opacity="0.35" />
+                <circle cx="150" cy="150" r="3" fill="#F4E0D6" opacity="0.3" />
+                <circle cx="150" cy="150" r="1.5" fill="#C9A96E" opacity="0.25" />
             </g>
         </svg>
 
         <svg class="hero-corner-flower-br" viewBox="0 0 200 200" fill="none">
             <g opacity="0.8">
-                <circle cx="60" cy="50" r="28" fill="#F4E0D6" opacity="0.7"/>
-                <circle cx="60" cy="50" r="20" fill="#E8C4B8" opacity="0.5"/>
-                <circle cx="60" cy="50" r="12" fill="#F5EDE0" opacity="0.6"/>
-                <circle cx="60" cy="50" r="5" fill="#C9A96E" opacity="0.4"/>
-                <circle cx="120" cy="80" r="22" fill="#E8C4B8" opacity="0.6"/>
-                <circle cx="120" cy="80" r="15" fill="#D4A097" opacity="0.4"/>
-                <circle cx="120" cy="80" r="8" fill="#F4E0D6" opacity="0.5"/>
-                <circle cx="120" cy="80" r="3" fill="#C9A96E" opacity="0.35"/>
-                <ellipse cx="40" cy="120" rx="12" ry="16" fill="#F4E0D6" opacity="0.5" transform="rotate(-20 40 120)"/>
-                <ellipse cx="40" cy="120" rx="6" ry="10" fill="#E8C4B8" opacity="0.4" transform="rotate(-20 40 120)"/>
-                <path d="M80 30 C90 25, 95 30, 90 40 C85 35, 80 35, 80 30Z" fill="#B5C4B1" opacity="0.5"/>
-                <path d="M140 60 C150 55, 155 60, 150 70 C145 65, 140 65, 140 60Z" fill="#B5C4B1" opacity="0.45"/>
-                <path d="M20 140 C30 135, 35 140, 30 150 C25 145, 20 145, 20 140Z" fill="#8FA68A" opacity="0.4"/>
-                <path d="M150 110 C158 105, 162 110, 158 118 C153 114, 150 114, 150 110Z" fill="#B5C4B1" opacity="0.35"/>
-                <circle cx="90" cy="130" r="8" fill="#F4E0D6" opacity="0.45"/>
-                <circle cx="90" cy="130" r="4" fill="#E8C4B8" opacity="0.35"/>
-                <circle cx="90" cy="130" r="2" fill="#C9A96E" opacity="0.3"/>
-                <circle cx="150" cy="150" r="6" fill="#E8C4B8" opacity="0.35"/>
-                <circle cx="150" cy="150" r="3" fill="#F4E0D6" opacity="0.3"/>
-                <circle cx="150" cy="150" r="1.5" fill="#C9A96E" opacity="0.25"/>
+                <circle cx="60" cy="50" r="28" fill="#F4E0D6" opacity="0.7" />
+                <circle cx="60" cy="50" r="20" fill="#E8C4B8" opacity="0.5" />
+                <circle cx="60" cy="50" r="12" fill="#F5EDE0" opacity="0.6" />
+                <circle cx="60" cy="50" r="5" fill="#C9A96E" opacity="0.4" />
+                <circle cx="120" cy="80" r="22" fill="#E8C4B8" opacity="0.6" />
+                <circle cx="120" cy="80" r="15" fill="#D4A097" opacity="0.4" />
+                <circle cx="120" cy="80" r="8" fill="#F4E0D6" opacity="0.5" />
+                <circle cx="120" cy="80" r="3" fill="#C9A96E" opacity="0.35" />
+                <ellipse cx="40" cy="120" rx="12" ry="16" fill="#F4E0D6" opacity="0.5" transform="rotate(-20 40 120)" />
+                <ellipse cx="40" cy="120" rx="6" ry="10" fill="#E8C4B8" opacity="0.4" transform="rotate(-20 40 120)" />
+                <path d="M80 30 C90 25, 95 30, 90 40 C85 35, 80 35, 80 30Z" fill="#B5C4B1" opacity="0.5" />
+                <path d="M140 60 C150 55, 155 60, 150 70 C145 65, 140 65, 140 60Z" fill="#B5C4B1" opacity="0.45" />
+                <path d="M20 140 C30 135, 35 140, 30 150 C25 145, 20 145, 20 140Z" fill="#8FA68A" opacity="0.4" />
+                <path d="M150 110 C158 105, 162 110, 158 118 C153 114, 150 114, 150 110Z" fill="#B5C4B1"
+                    opacity="0.35" />
+                <circle cx="90" cy="130" r="8" fill="#F4E0D6" opacity="0.45" />
+                <circle cx="90" cy="130" r="4" fill="#E8C4B8" opacity="0.35" />
+                <circle cx="90" cy="130" r="2" fill="#C9A96E" opacity="0.3" />
+                <circle cx="150" cy="150" r="6" fill="#E8C4B8" opacity="0.35" />
+                <circle cx="150" cy="150" r="3" fill="#F4E0D6" opacity="0.3" />
+                <circle cx="150" cy="150" r="1.5" fill="#C9A96E" opacity="0.25" />
             </g>
         </svg>
 
         <svg class="hero-corner-flower-tr" viewBox="0 0 160 160" fill="none">
             <g opacity="0.8">
-                <circle cx="80" cy="40" r="20" fill="#F4E0D6" opacity="0.55"/>
-                <circle cx="80" cy="40" r="14" fill="#E8C4B8" opacity="0.4"/>
-                <circle cx="80" cy="40" r="8" fill="#F5EDE0" opacity="0.45"/>
-                <circle cx="80" cy="40" r="3" fill="#C9A96E" opacity="0.3"/>
-                <circle cx="40" cy="90" r="16" fill="#E8C4B8" opacity="0.45"/>
-                <circle cx="40" cy="90" r="10" fill="#D4A097" opacity="0.3"/>
-                <circle cx="40" cy="90" r="5" fill="#F4E0D6" opacity="0.35"/>
-                <circle cx="40" cy="90" r="2" fill="#C9A96E" opacity="0.25"/>
-                <path d="M100 70 C110 65, 115 70, 110 80 C105 75, 100 75, 100 70Z" fill="#B5C4B1" opacity="0.4"/>
-                <circle cx="120" cy="100" r="10" fill="#F4E0D6" opacity="0.35"/>
-                <circle cx="120" cy="100" r="5" fill="#E8C4B8" opacity="0.25"/>
+                <circle cx="80" cy="40" r="20" fill="#F4E0D6" opacity="0.55" />
+                <circle cx="80" cy="40" r="14" fill="#E8C4B8" opacity="0.4" />
+                <circle cx="80" cy="40" r="8" fill="#F5EDE0" opacity="0.45" />
+                <circle cx="80" cy="40" r="3" fill="#C9A96E" opacity="0.3" />
+                <circle cx="40" cy="90" r="16" fill="#E8C4B8" opacity="0.45" />
+                <circle cx="40" cy="90" r="10" fill="#D4A097" opacity="0.3" />
+                <circle cx="40" cy="90" r="5" fill="#F4E0D6" opacity="0.35" />
+                <circle cx="40" cy="90" r="2" fill="#C9A96E" opacity="0.25" />
+                <path d="M100 70 C110 65, 115 70, 110 80 C105 75, 100 75, 100 70Z" fill="#B5C4B1" opacity="0.4" />
+                <circle cx="120" cy="100" r="10" fill="#F4E0D6" opacity="0.35" />
+                <circle cx="120" cy="100" r="5" fill="#E8C4B8" opacity="0.25" />
             </g>
         </svg>
 
         <svg class="hero-corner-flower-bl" viewBox="0 0 160 160" fill="none">
             <g opacity="0.8">
-                <circle cx="80" cy="40" r="20" fill="#F4E0D6" opacity="0.55"/>
-                <circle cx="80" cy="40" r="14" fill="#E8C4B8" opacity="0.4"/>
-                <circle cx="80" cy="40" r="8" fill="#F5EDE0" opacity="0.45"/>
-                <circle cx="80" cy="40" r="3" fill="#C9A96E" opacity="0.3"/>
-                <circle cx="40" cy="90" r="16" fill="#E8C4B8" opacity="0.45"/>
-                <circle cx="40" cy="90" r="10" fill="#D4A097" opacity="0.3"/>
-                <circle cx="40" cy="90" r="5" fill="#F4E0D6" opacity="0.35"/>
-                <circle cx="40" cy="90" r="2" fill="#C9A96E" opacity="0.25"/>
-                <path d="M100 70 C110 65, 115 70, 110 80 C105 75, 100 75, 100 70Z" fill="#B5C4B1" opacity="0.4"/>
-                <circle cx="120" cy="100" r="10" fill="#F4E0D6" opacity="0.35"/>
-                <circle cx="120" cy="100" r="5" fill="#E8C4B8" opacity="0.25"/>
+                <circle cx="80" cy="40" r="20" fill="#F4E0D6" opacity="0.55" />
+                <circle cx="80" cy="40" r="14" fill="#E8C4B8" opacity="0.4" />
+                <circle cx="80" cy="40" r="8" fill="#F5EDE0" opacity="0.45" />
+                <circle cx="80" cy="40" r="3" fill="#C9A96E" opacity="0.3" />
+                <circle cx="40" cy="90" r="16" fill="#E8C4B8" opacity="0.45" />
+                <circle cx="40" cy="90" r="10" fill="#D4A097" opacity="0.3" />
+                <circle cx="40" cy="90" r="5" fill="#F4E0D6" opacity="0.35" />
+                <circle cx="40" cy="90" r="2" fill="#C9A96E" opacity="0.25" />
+                <path d="M100 70 C110 65, 115 70, 110 80 C105 75, 100 75, 100 70Z" fill="#B5C4B1" opacity="0.4" />
+                <circle cx="120" cy="100" r="10" fill="#F4E0D6" opacity="0.35" />
+                <circle cx="120" cy="100" r="5" fill="#E8C4B8" opacity="0.25" />
             </g>
         </svg>
 
         <div class="hero-content">
             <svg class="hero-wreath fade-in" viewBox="0 0 200 200" fill="none">
-                <circle cx="100" cy="100" r="85" stroke="var(--sage)" stroke-width="1" opacity="0.3"/>
-                <circle cx="100" cy="100" r="80" stroke="var(--sage)" stroke-width="2" opacity="0.2"/>
-                <path d="M100 20 C90 30, 80 35, 70 38 C80 45, 90 50, 100 50 C110 50, 120 45, 130 38 C120 35, 110 30, 100 20Z" fill="var(--sage)" opacity="0.5"/>
-                <path d="M100 25 C93 33, 86 38, 78 42 C86 48, 94 52, 100 52 C106 52, 114 48, 122 42 C114 38, 107 33, 100 25Z" fill="var(--sage-dark)" opacity="0.4"/>
-                <path d="M180 100 C170 90, 165 80, 162 70 C155 80, 150 90, 150 100 C150 110, 155 120, 162 130 C165 120, 170 110, 180 100Z" fill="var(--sage)" opacity="0.5"/>
-                <path d="M175 100 C168 93, 162 86, 158 78 C152 86, 148 94, 148 100 C148 106, 152 114, 158 122 C162 114, 168 107, 175 100Z" fill="var(--sage-dark)" opacity="0.4"/>
-                <path d="M100 180 C90 170, 80 165, 70 162 C80 155, 90 150, 100 150 C110 150, 120 155, 130 162 C120 165, 110 170, 100 180Z" fill="var(--sage)" opacity="0.5"/>
-                <path d="M100 175 C93 168, 86 162, 78 158 C86 152, 94 148, 100 148 C106 148, 114 152, 122 158 C114 162, 107 168, 100 175Z" fill="var(--sage-dark)" opacity="0.4"/>
-                <path d="M20 100 C30 90, 35 80, 38 70 C45 80, 50 90, 50 100 C50 110, 45 120, 38 130 C35 120, 30 110, 20 100Z" fill="var(--sage)" opacity="0.5"/>
-                <path d="M25 100 C33 93, 38 86, 42 78 C48 86, 52 94, 52 100 C52 106, 48 114, 42 122 C38 114, 33 107, 25 100Z" fill="var(--sage-dark)" opacity="0.4"/>
-                <circle cx="55" cy="55" r="4" fill="var(--pink)" opacity="0.6"/>
-                <circle cx="55" cy="55" r="2" fill="var(--gold)" opacity="0.5"/>
-                <circle cx="145" cy="55" r="4" fill="var(--pink)" opacity="0.6"/>
-                <circle cx="145" cy="55" r="2" fill="var(--gold)" opacity="0.5"/>
-                <circle cx="55" cy="145" r="4" fill="var(--pink)" opacity="0.6"/>
-                <circle cx="55" cy="145" r="2" fill="var(--gold)" opacity="0.5"/>
-                <circle cx="145" cy="145" r="4" fill="var(--pink)" opacity="0.6"/>
-                <circle cx="145" cy="145" r="2" fill="var(--gold)" opacity="0.5"/>
-                <path d="M75 28 C68 35, 58 42, 48 46 C58 52, 68 58, 75 62 C82 58, 92 52, 75 28Z" fill="var(--sage)" opacity="0.35"/>
-                <path d="M125 28 C132 35, 142 42, 152 46 C142 52, 132 58, 125 62 C118 58, 108 52, 125 28Z" fill="var(--sage)" opacity="0.35"/>
-                <path d="M75 172 C68 165, 58 158, 48 154 C58 148, 68 142, 75 138 C82 142, 92 148, 75 172Z" fill="var(--sage)" opacity="0.35"/>
-                <path d="M125 172 C132 165, 142 158, 152 154 C142 148, 132 142, 125 138 C118 142, 108 148, 125 172Z" fill="var(--sage)" opacity="0.35"/>
-                <circle cx="75" cy="40" r="1.5" fill="var(--gold)" opacity="0.4"/>
-                <circle cx="125" cy="40" r="1.5" fill="var(--gold)" opacity="0.4"/>
-                <circle cx="40" cy="75" r="1.5" fill="var(--gold)" opacity="0.4"/>
-                <circle cx="40" cy="125" r="1.5" fill="var(--gold)" opacity="0.4"/>
-                <circle cx="75" cy="160" r="1.5" fill="var(--gold)" opacity="0.4"/>
-                <circle cx="125" cy="160" r="1.5" fill="var(--gold)" opacity="0.4"/>
-                <circle cx="160" cy="75" r="1.5" fill="var(--gold)" opacity="0.4"/>
-                <circle cx="160" cy="125" r="1.5" fill="var(--gold)" opacity="0.4"/>
+                <circle cx="100" cy="100" r="85" stroke="var(--sage)" stroke-width="1" opacity="0.3" />
+                <circle cx="100" cy="100" r="80" stroke="var(--sage)" stroke-width="2" opacity="0.2" />
+                <path
+                    d="M100 20 C90 30, 80 35, 70 38 C80 45, 90 50, 100 50 C110 50, 120 45, 130 38 C120 35, 110 30, 100 20Z"
+                    fill="var(--sage)" opacity="0.5" />
+                <path
+                    d="M100 25 C93 33, 86 38, 78 42 C86 48, 94 52, 100 52 C106 52, 114 48, 122 42 C114 38, 107 33, 100 25Z"
+                    fill="var(--sage-dark)" opacity="0.4" />
+                <path
+                    d="M180 100 C170 90, 165 80, 162 70 C155 80, 150 90, 150 100 C150 110, 155 120, 162 130 C165 120, 170 110, 180 100Z"
+                    fill="var(--sage)" opacity="0.5" />
+                <path
+                    d="M175 100 C168 93, 162 86, 158 78 C152 86, 148 94, 148 100 C148 106, 152 114, 158 122 C162 114, 168 107, 175 100Z"
+                    fill="var(--sage-dark)" opacity="0.4" />
+                <path
+                    d="M100 180 C90 170, 80 165, 70 162 C80 155, 90 150, 100 150 C110 150, 120 155, 130 162 C120 165, 110 170, 100 180Z"
+                    fill="var(--sage)" opacity="0.5" />
+                <path
+                    d="M100 175 C93 168, 86 162, 78 158 C86 152, 94 148, 100 148 C106 148, 114 152, 122 158 C114 162, 107 168, 100 175Z"
+                    fill="var(--sage-dark)" opacity="0.4" />
+                <path
+                    d="M20 100 C30 90, 35 80, 38 70 C45 80, 50 90, 50 100 C50 110, 45 120, 38 130 C35 120, 30 110, 20 100Z"
+                    fill="var(--sage)" opacity="0.5" />
+                <path
+                    d="M25 100 C33 93, 38 86, 42 78 C48 86, 52 94, 52 100 C52 106, 48 114, 42 122 C38 114, 33 107, 25 100Z"
+                    fill="var(--sage-dark)" opacity="0.4" />
+                <circle cx="55" cy="55" r="4" fill="var(--pink)" opacity="0.6" />
+                <circle cx="55" cy="55" r="2" fill="var(--gold)" opacity="0.5" />
+                <circle cx="145" cy="55" r="4" fill="var(--pink)" opacity="0.6" />
+                <circle cx="145" cy="55" r="2" fill="var(--gold)" opacity="0.5" />
+                <circle cx="55" cy="145" r="4" fill="var(--pink)" opacity="0.6" />
+                <circle cx="55" cy="145" r="2" fill="var(--gold)" opacity="0.5" />
+                <circle cx="145" cy="145" r="4" fill="var(--pink)" opacity="0.6" />
+                <circle cx="145" cy="145" r="2" fill="var(--gold)" opacity="0.5" />
+                <path d="M75 28 C68 35, 58 42, 48 46 C58 52, 68 58, 75 62 C82 58, 92 52, 75 28Z" fill="var(--sage)"
+                    opacity="0.35" />
+                <path d="M125 28 C132 35, 142 42, 152 46 C142 52, 132 58, 125 62 C118 58, 108 52, 125 28Z"
+                    fill="var(--sage)" opacity="0.35" />
+                <path d="M75 172 C68 165, 58 158, 48 154 C58 148, 68 142, 75 138 C82 142, 92 148, 75 172Z"
+                    fill="var(--sage)" opacity="0.35" />
+                <path d="M125 172 C132 165, 142 158, 152 154 C142 148, 132 142, 125 138 C118 142, 108 148, 125 172Z"
+                    fill="var(--sage)" opacity="0.35" />
+                <circle cx="75" cy="40" r="1.5" fill="var(--gold)" opacity="0.4" />
+                <circle cx="125" cy="40" r="1.5" fill="var(--gold)" opacity="0.4" />
+                <circle cx="40" cy="75" r="1.5" fill="var(--gold)" opacity="0.4" />
+                <circle cx="40" cy="125" r="1.5" fill="var(--gold)" opacity="0.4" />
+                <circle cx="75" cy="160" r="1.5" fill="var(--gold)" opacity="0.4" />
+                <circle cx="125" cy="160" r="1.5" fill="var(--gold)" opacity="0.4" />
+                <circle cx="160" cy="75" r="1.5" fill="var(--gold)" opacity="0.4" />
+                <circle cx="160" cy="125" r="1.5" fill="var(--gold)" opacity="0.4" />
             </svg>
 
             <p class="hero-subtitle fade-in delay-1">Приглашение на свадьбу</p>
@@ -1007,7 +1146,7 @@
         <div class="scroll-indicator fade-in delay-4">
             <span>Листайте</span>
             <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
             </svg>
         </div>
     </section>
@@ -1016,8 +1155,9 @@
     <div class="section-divider fade-in">
         <div class="divider-line"></div>
         <svg class="divider-ornament" viewBox="0 0 40 40" fill="currentColor">
-            <path d="M20 5 C15 10, 10 15, 10 20 C10 25, 15 30, 20 35 C25 30, 30 25, 30 20 C30 15, 25 10, 20 5Z" opacity="0.6"/>
-            <circle cx="20" cy="20" r="3" opacity="0.4"/>
+            <path d="M20 5 C15 10, 10 15, 10 20 C10 25, 15 30, 20 35 C25 30, 30 25, 30 20 C30 15, 25 10, 20 5Z"
+                opacity="0.6" />
+            <circle cx="20" cy="20" r="3" opacity="0.4" />
         </svg>
         <div class="divider-line"></div>
     </div>
@@ -1036,9 +1176,10 @@
         </p>
 
         <div class="venue-card fade-in delay-2">
-            <svg class="venue-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
-                <circle cx="12" cy="10" r="3"/>
+            <svg class="venue-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
             </svg>
             <h3 class="venue-name">Место проведения</h3>
             <p class="venue-address">
@@ -1081,8 +1222,9 @@
     <div class="section-divider fade-in">
         <div class="divider-line"></div>
         <svg class="divider-ornament" viewBox="0 0 40 40" fill="currentColor">
-            <path d="M20 5 C15 10, 10 15, 10 20 C10 25, 15 30, 20 35 C25 30, 30 25, 30 20 C30 15, 25 10, 20 5Z" opacity="0.6"/>
-            <circle cx="20" cy="20" r="3" opacity="0.4"/>
+            <path d="M20 5 C15 10, 10 15, 10 20 C10 25, 15 30, 20 35 C25 30, 30 25, 30 20 C30 15, 25 10, 20 5Z"
+                opacity="0.6" />
+            <circle cx="20" cy="20" r="3" opacity="0.4" />
         </svg>
         <div class="divider-line"></div>
     </div>
@@ -1096,7 +1238,8 @@
             <form id="rsvpForm" novalidate>
                 <div class="form-group">
                     <label for="guestName">Имя и фамилия <span class="required">*</span></label>
-                    <input type="text" id="guestName" class="form-control" placeholder="Введите ваше имя" required autocomplete="name">
+                    <input type="text" id="guestName" class="form-control" placeholder="Введите ваше имя" required
+                        autocomplete="name">
                     <div class="error-message" id="nameError">Пожалуйста, введите ваше имя</div>
                 </div>
 
@@ -1123,8 +1266,9 @@
 
             <div class="success-message" id="successMessage">
                 <div class="success-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="20 6 9 17 4 12"/>
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12" />
                     </svg>
                 </div>
                 <h3>Спасибо!</h3>
@@ -1173,51 +1317,147 @@
                 </linearGradient>
             </defs>
             <g transform="translate(150, 150)">
-                <g transform="rotate(0)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
-                <g transform="rotate(15)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
-                <g transform="rotate(30)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
-                <g transform="rotate(45)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
-                <g transform="rotate(60)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
-                <g transform="rotate(75)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
-                <g transform="rotate(90)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
-                <g transform="rotate(105)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
-                <g transform="rotate(120)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
-                <g transform="rotate(135)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
-                <g transform="rotate(150)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
-                <g transform="rotate(165)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
-                <g transform="rotate(180)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
-                <g transform="rotate(195)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
-                <g transform="rotate(210)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
-                <g transform="rotate(225)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
-                <g transform="rotate(240)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
-                <g transform="rotate(255)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
-                <g transform="rotate(270)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
-                <g transform="rotate(285)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
-                <g transform="rotate(300)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
-                <g transform="rotate(315)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
-                <g transform="rotate(330)"><path d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z" fill="url(#wreathGrad1)" opacity="0.5"/></g>
-                <g transform="rotate(345)"><path d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z" fill="url(#wreathGrad1)" opacity="0.45"/></g>
-                <circle cx="0" cy="-105" r="6" fill="url(#wreathGrad2)" opacity="0.55"/>
-                <circle cx="0" cy="-105" r="2.5" fill="var(--gold)" opacity="0.5"/>
-                <circle cx="75" cy="75" r="6" fill="url(#wreathGrad2)" opacity="0.55"/>
-                <circle cx="75" cy="75" r="2.5" fill="var(--gold)" opacity="0.5"/>
-                <circle cx="105" cy="0" r="6" fill="url(#wreathGrad2)" opacity="0.55"/>
-                <circle cx="105" cy="0" r="2.5" fill="var(--gold)" opacity="0.5"/>
-                <circle cx="-75" cy="75" r="6" fill="url(#wreathGrad2)" opacity="0.55"/>
-                <circle cx="-75" cy="75" r="2.5" fill="var(--gold)" opacity="0.5"/>
-                <circle cx="-105" cy="0" r="6" fill="url(#wreathGrad2)" opacity="0.55"/>
-                <circle cx="-105" cy="0" r="2.5" fill="var(--gold)" opacity="0.5"/>
-                <circle cx="0" cy="105" r="6" fill="url(#wreathGrad2)" opacity="0.55"/>
-                <circle cx="0" cy="105" r="2.5" fill="var(--gold)" opacity="0.5"/>
-                <circle cx="0" cy="0" r="80" stroke="var(--sage)" stroke-width="0.5" opacity="0.2"/>
-                <circle cx="38" cy="-98" r="2" fill="var(--gold)" opacity="0.4"/>
-                <circle cx="-38" cy="-98" r="2" fill="var(--gold)" opacity="0.4"/>
-                <circle cx="98" cy="38" r="2" fill="var(--gold)" opacity="0.4"/>
-                <circle cx="98" cy="-38" r="2" fill="var(--gold)" opacity="0.4"/>
-                <circle cx="-98" cy="38" r="2" fill="var(--gold)" opacity="0.4"/>
-                <circle cx="-98" cy="-38" r="2" fill="var(--gold)" opacity="0.4"/>
-                <circle cx="38" cy="98" r="2" fill="var(--gold)" opacity="0.4"/>
-                <circle cx="-38" cy="98" r="2" fill="var(--gold)" opacity="0.4"/>
+                <g transform="rotate(0)">
+                    <path
+                        d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z"
+                        fill="url(#wreathGrad1)" opacity="0.5" />
+                </g>
+                <g transform="rotate(15)">
+                    <path
+                        d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z"
+                        fill="url(#wreathGrad1)" opacity="0.45" />
+                </g>
+                <g transform="rotate(30)">
+                    <path
+                        d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z"
+                        fill="url(#wreathGrad1)" opacity="0.5" />
+                </g>
+                <g transform="rotate(45)">
+                    <path
+                        d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z"
+                        fill="url(#wreathGrad1)" opacity="0.45" />
+                </g>
+                <g transform="rotate(60)">
+                    <path
+                        d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z"
+                        fill="url(#wreathGrad1)" opacity="0.5" />
+                </g>
+                <g transform="rotate(75)">
+                    <path
+                        d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z"
+                        fill="url(#wreathGrad1)" opacity="0.45" />
+                </g>
+                <g transform="rotate(90)">
+                    <path
+                        d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z"
+                        fill="url(#wreathGrad1)" opacity="0.5" />
+                </g>
+                <g transform="rotate(105)">
+                    <path
+                        d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z"
+                        fill="url(#wreathGrad1)" opacity="0.45" />
+                </g>
+                <g transform="rotate(120)">
+                    <path
+                        d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z"
+                        fill="url(#wreathGrad1)" opacity="0.5" />
+                </g>
+                <g transform="rotate(135)">
+                    <path
+                        d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z"
+                        fill="url(#wreathGrad1)" opacity="0.45" />
+                </g>
+                <g transform="rotate(150)">
+                    <path
+                        d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z"
+                        fill="url(#wreathGrad1)" opacity="0.5" />
+                </g>
+                <g transform="rotate(165)">
+                    <path
+                        d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z"
+                        fill="url(#wreathGrad1)" opacity="0.45" />
+                </g>
+                <g transform="rotate(180)">
+                    <path
+                        d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z"
+                        fill="url(#wreathGrad1)" opacity="0.5" />
+                </g>
+                <g transform="rotate(195)">
+                    <path
+                        d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z"
+                        fill="url(#wreathGrad1)" opacity="0.45" />
+                </g>
+                <g transform="rotate(210)">
+                    <path
+                        d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z"
+                        fill="url(#wreathGrad1)" opacity="0.5" />
+                </g>
+                <g transform="rotate(225)">
+                    <path
+                        d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z"
+                        fill="url(#wreathGrad1)" opacity="0.45" />
+                </g>
+                <g transform="rotate(240)">
+                    <path
+                        d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z"
+                        fill="url(#wreathGrad1)" opacity="0.5" />
+                </g>
+                <g transform="rotate(255)">
+                    <path
+                        d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z"
+                        fill="url(#wreathGrad1)" opacity="0.45" />
+                </g>
+                <g transform="rotate(270)">
+                    <path
+                        d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z"
+                        fill="url(#wreathGrad1)" opacity="0.5" />
+                </g>
+                <g transform="rotate(285)">
+                    <path
+                        d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z"
+                        fill="url(#wreathGrad1)" opacity="0.45" />
+                </g>
+                <g transform="rotate(300)">
+                    <path
+                        d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z"
+                        fill="url(#wreathGrad1)" opacity="0.5" />
+                </g>
+                <g transform="rotate(315)">
+                    <path
+                        d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z"
+                        fill="url(#wreathGrad1)" opacity="0.45" />
+                </g>
+                <g transform="rotate(330)">
+                    <path
+                        d="M0 -110 C-15 -95, -20 -75, -18 -55 C-10 -65, -2 -75, 0 -90 C2 -75, 10 -65, 18 -55 C20 -75, 15 -95, 0 -110Z"
+                        fill="url(#wreathGrad1)" opacity="0.5" />
+                </g>
+                <g transform="rotate(345)">
+                    <path
+                        d="M0 -112 C-14 -98, -22 -80, -20 -60 C-12 -68, -3 -78, 0 -92 C3 -78, 12 -68, 20 -60 C22 -80, 14 -98, 0 -112Z"
+                        fill="url(#wreathGrad1)" opacity="0.45" />
+                </g>
+                <circle cx="0" cy="-105" r="6" fill="url(#wreathGrad2)" opacity="0.55" />
+                <circle cx="0" cy="-105" r="2.5" fill="var(--gold)" opacity="0.5" />
+                <circle cx="75" cy="75" r="6" fill="url(#wreathGrad2)" opacity="0.55" />
+                <circle cx="75" cy="75" r="2.5" fill="var(--gold)" opacity="0.5" />
+                <circle cx="105" cy="0" r="6" fill="url(#wreathGrad2)" opacity="0.55" />
+                <circle cx="105" cy="0" r="2.5" fill="var(--gold)" opacity="0.5" />
+                <circle cx="-75" cy="75" r="6" fill="url(#wreathGrad2)" opacity="0.55" />
+                <circle cx="-75" cy="75" r="2.5" fill="var(--gold)" opacity="0.5" />
+                <circle cx="-105" cy="0" r="6" fill="url(#wreathGrad2)" opacity="0.55" />
+                <circle cx="-105" cy="0" r="2.5" fill="var(--gold)" opacity="0.5" />
+                <circle cx="0" cy="105" r="6" fill="url(#wreathGrad2)" opacity="0.55" />
+                <circle cx="0" cy="105" r="2.5" fill="var(--gold)" opacity="0.5" />
+                <circle cx="0" cy="0" r="80" stroke="var(--sage)" stroke-width="0.5" opacity="0.2" />
+                <circle cx="38" cy="-98" r="2" fill="var(--gold)" opacity="0.4" />
+                <circle cx="-38" cy="-98" r="2" fill="var(--gold)" opacity="0.4" />
+                <circle cx="98" cy="38" r="2" fill="var(--gold)" opacity="0.4" />
+                <circle cx="98" cy="-38" r="2" fill="var(--gold)" opacity="0.4" />
+                <circle cx="-98" cy="38" r="2" fill="var(--gold)" opacity="0.4" />
+                <circle cx="-98" cy="-38" r="2" fill="var(--gold)" opacity="0.4" />
+                <circle cx="38" cy="98" r="2" fill="var(--gold)" opacity="0.4" />
+                <circle cx="-38" cy="98" r="2" fill="var(--gold)" opacity="0.4" />
             </g>
         </svg>
 
@@ -1227,13 +1467,15 @@
         <div class="footer-contacts">
             <a href="tel:+79001234567" class="contact-link">
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                    <path
+                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
                 </svg>
                 <span>+7 (900) 123-45-67</span>
             </a>
             <a href="https://t.me/username" class="contact-link" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+                    <path
+                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
                 </svg>
                 <span>Telegram</span>
             </a>
@@ -1243,265 +1485,176 @@
     </footer>
 
     <script>
-        // =============================================
-        // НАСТРОЙКИ TELEGRAM — ЗАПОЛНИТЕ СВОИ ДАННЫЕ
-        // =============================================
-        var TG_BOT_TOKEN = '8457614052:AAGSOO5Gh5taZHEFXhftZ0bmOnBCQ-xuaiA';
-        var TG_CHAT_ID = '5012449006';
+        // ====================================================================
+        // НАСТРОЙКА: ВСТАВЬТЕ СЮДА ВАШ GOOGLE APPS SCRIPT URL
+        // (см. инструкцию ниже)
+        // ====================================================================
+        var PROXY_URL = 'https://script.google.com/macros/s/AKfycbytp-yY809ZosExNpDlJOny50Ao0pFaKlPLMS5XJfRqYh83T6fzcuL8YdnTe5NPM0t4VA/exec';
+        // ====================================================================
 
-        // =============================================
-
-        // ===== SCROLL ANIMATIONS =====
-        (function() {
-            var animatedElements = document.querySelectorAll('.fade-in');
-
-            var observerOptions = {
-                root: null,
-                rootMargin: '0px 0px -60px 0px',
-                threshold: 0.1
-            };
-
-            var observer = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
+        // Scroll Animations
+        (function () {
+            var els = document.querySelectorAll('.fade-in');
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('visible');
                         observer.unobserve(entry.target);
                     }
                 });
-            }, observerOptions);
-
-            animatedElements.forEach(function(el) {
-                observer.observe(el);
-            });
+            }, { rootMargin: '0px 0px -60px 0px', threshold: 0.1 });
+            els.forEach(function (el) { observer.observe(el); });
         })();
 
-        // ===== COUNTDOWN TIMER =====
-        (function() {
-            var weddingDate = new Date('2026-06-06T15:00:00');
+        // Countdown
+        (function () {
+            var target = new Date('2026-06-06T15:00:00');
+            var d = document.getElementById('cdDays');
+            var h = document.getElementById('cdHours');
+            var m = document.getElementById('cdMinutes');
+            var s = document.getElementById('cdSeconds');
 
-            var daysEl = document.getElementById('cdDays');
-            var hoursEl = document.getElementById('cdHours');
-            var minutesEl = document.getElementById('cdMinutes');
-            var secondsEl = document.getElementById('cdSeconds');
-
-            function updateCountdown() {
-                var now = new Date();
-                var diff = weddingDate - now;
-
+            function update() {
+                var diff = target - new Date();
                 if (diff <= 0) {
-                    daysEl.textContent = '000';
-                    hoursEl.textContent = '00';
-                    minutesEl.textContent = '00';
-                    secondsEl.textContent = '00';
+                    d.textContent = '000'; h.textContent = '00';
+                    m.textContent = '00'; s.textContent = '00';
                     return;
                 }
-
-                var totalSeconds = Math.floor(diff / 1000);
-                var totalMinutes = Math.floor(totalSeconds / 60);
-                var totalHours = Math.floor(totalMinutes / 60);
-                var totalDays = Math.floor(totalHours / 24);
-
-                var hours = totalHours % 24;
-                var minutes = totalMinutes % 60;
-                var seconds = totalSeconds % 60;
-
-                daysEl.textContent = String(totalDays).padStart(3, '0');
-                hoursEl.textContent = String(hours).padStart(2, '0');
-                minutesEl.textContent = String(minutes).padStart(2, '0');
-                secondsEl.textContent = String(seconds).padStart(2, '0');
+                var totalSec = Math.floor(diff / 1000);
+                var totalMin = Math.floor(totalSec / 60);
+                var totalHr = Math.floor(totalMin / 60);
+                var totalDays = Math.floor(totalHr / 24);
+                d.textContent = String(totalDays).padStart(3, '0');
+                h.textContent = String(totalHr % 24).padStart(2, '0');
+                m.textContent = String(totalMin % 60).padStart(2, '0');
+                s.textContent = String(totalSec % 60).padStart(2, '0');
             }
-
-            updateCountdown();
-            setInterval(updateCountdown, 1000);
+            update();
+            setInterval(update, 1000);
         })();
 
-        // ===== RSVP FORM WITH TELEGRAM =====
-        (function() {
+        // RSVP Form
+        (function () {
             var form = document.getElementById('rsvpForm');
             var submitBtn = document.getElementById('submitBtn');
             var btnText = submitBtn.querySelector('.btn-text');
             var spinner = document.getElementById('spinner');
-            var successMessage = document.getElementById('successMessage');
+            var successMsg = document.getElementById('successMessage');
 
-            function showError(elementId, show) {
-                var errorEl = document.getElementById(elementId);
-                if (show) {
-                    errorEl.classList.add('show');
-                } else {
-                    errorEl.classList.remove('show');
-                }
+            function showError(id, show) {
+                document.getElementById(id).classList.toggle('show', show);
             }
-
             function setFieldError(field, hasError) {
-                if (hasError) {
-                    field.classList.add('error');
-                } else {
-                    field.classList.remove('error');
-                }
+                field.classList.toggle('error', hasError);
             }
-
-            function showToast(message) {
+            function showToast(msg) {
                 var toast = document.getElementById('errorToast');
-                toast.textContent = message;
+                toast.textContent = msg;
                 toast.classList.add('show');
-                setTimeout(function() {
-                    toast.classList.remove('show');
-                }, 3000);
+                setTimeout(function () { toast.classList.remove('show'); }, 3000);
             }
-
-            function validateForm() {
-                var isValid = true;
-
-                var nameField = document.getElementById('guestName');
-                var nameValue = nameField.value.trim();
-                if (!nameValue) {
-                    setFieldError(nameField, true);
-                    showError('nameError', true);
-                    isValid = false;
-                } else {
-                    setFieldError(nameField, false);
-                    showError('nameError', false);
-                }
-
-                var attendanceChecked = document.querySelector('input[name="attendance"]:checked');
-                if (!attendanceChecked) {
-                    showError('attendanceError', true);
-                    isValid = false;
-                } else {
-                    showError('attendanceError', false);
-                }
-
-                return isValid;
-            }
-
-            document.getElementById('guestName').addEventListener('input', function() {
-                setFieldError(this, false);
-                showError('nameError', false);
-            });
-
-            document.querySelectorAll('input[name="attendance"]').forEach(function(radio) {
-                radio.addEventListener('change', function() {
-                    showError('attendanceError', false);
-                });
-            });
-
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
-
-                if (!validateForm()) {
-                    var firstError = form.querySelector('.form-control.error, .error-message.show');
-                    if (firstError) {
-                        firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }
-                    return;
-                }
-
-                // Собираем данные формы
-                var guestName = document.getElementById('guestName').value.trim();
-                var attendance = document.querySelector('input[name="attendance"]:checked').value;
-
-                var attendanceText = attendance === 'yes' ? '✅ Да, приду' : '❌ Не смогу';
-
-                // Формируем сообщение для Telegram
-                var message = '💌 <b>Новый ответ на приглашение</b>\n\n';
-                message += '👤 <b>Имя:</b> ' + escapeHtml(guestName) + '\n';
-                message += '🎉 <b>Присутствие:</b> ' + attendanceText + '\n';
-
-                var now = new Date();
-                var timestamp = now.toLocaleString('ru-RU', {
-                    day: '2-digit', month: '2-digit', year: 'numeric',
-                    hour: '2-digit', minute: '2-digit'
-                });
-                message += '\n⏰ <b>Время отправки:</b> ' + timestamp;
-
-                // Показываем загрузку
-                submitBtn.disabled = true;
-                btnText.style.display = 'none';
-                spinner.style.display = 'block';
-
-                // Отправляем в Telegram
-                sendToTelegram(message);
-            });
-
             function escapeHtml(text) {
                 var div = document.createElement('div');
                 div.appendChild(document.createTextNode(text));
                 return div.innerHTML;
             }
 
-            function sendToTelegram(message) {
-                var url = 'https://api.telegram.org/bot' + TG_BOT_TOKEN + '/sendMessage';
-
-                fetch(url, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        chat_id: TG_CHAT_ID,
-                        text: message,
-                        parse_mode: 'HTML'
-                    })
-                })
-                .then(function(response) {
-                    if (!response.ok) {
-                        throw new Error('Ошибка сети');
-                    }
-                    return response.json();
-                })
-                .then(function(data) {
-                    if (data.ok) {
-                        form.style.display = 'none';
-                        successMessage.classList.add('show');
-                    } else {
-                        throw new Error(data.description || 'Ошибка отправки');
-                    }
-                })
-                .catch(function(error) {
-                    console.error('Telegram API Error:', error);
-                    showToast('⚠️ Ошибка отправки. Попробуйте ещё раз.');
-                    submitBtn.disabled = false;
-                    btnText.style.display = 'inline';
-                    spinner.style.display = 'none';
-                });
+            function validateForm() {
+                var valid = true;
+                var name = document.getElementById('guestName');
+                if (!name.value.trim()) {
+                    setFieldError(name, true); showError('nameError', true); valid = false;
+                } else {
+                    setFieldError(name, false); showError('nameError', false);
+                }
+                if (!document.querySelector('input[name="attendance"]:checked')) {
+                    showError('attendanceError', true); valid = false;
+                } else {
+                    showError('attendanceError', false);
+                }
+                return valid;
             }
+
+            document.getElementById('guestName').addEventListener('input', function () {
+                setFieldError(this, false); showError('nameError', false);
+            });
+            document.querySelectorAll('input[name="attendance"]').forEach(function (r) {
+                r.addEventListener('change', function () { showError('attendanceError', false); });
+            });
+
+            // Вставьте это вместо старого form.addEventListener('submit', ...)
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                if (!validateForm()) return;
+
+                var guestName = document.getElementById('guestName').value.trim();
+                var attendance = document.querySelector('input[name="attendance"]:checked').value;
+                var attendanceText = attendance === 'yes' ? '✅ Да, приду' : '❌ Не смогу';
+
+                var message = '💌 <b>Новый ответ на приглашение</b>\n\n';
+                message += '👤 <b>Имя:</b> ' + escapeHtml(guestName) + '\n';
+                message += '🎉 <b>Присутствие:</b> ' + attendanceText + '\n';
+                var now = new Date();
+                message += '\n⏰ <b>Время:</b> ' + now.toLocaleString('ru-RU');
+
+                submitBtn.disabled = true;
+                btnText.style.display = 'none';
+                spinner.style.display = 'block';
+
+                // Отправляем через FormData (гарантированно обходит CORS)
+                var formData = new FormData();
+                formData.append('message', message);
+
+                fetch(PROXY_URL, { method: 'POST', body: formData })
+                    .then(function (res) {
+                        if (!res.ok) throw new Error('Network error');
+                        return res.json();
+                    })
+                    .then(function (data) {
+                        if (data.status === 'success') {
+                            form.style.display = 'none';
+                            successMessage.classList.add('show');
+                        } else {
+                            throw new Error(data.message || 'Telegram error');
+                        }
+                    })
+                    .catch(function (err) {
+                        console.error('❌ Ошибка:', err);
+                        showToast('⚠️ Не удалось отправить. Попробуйте ещё раз.');
+                        submitBtn.disabled = false;
+                        btnText.style.display = 'inline';
+                        spinner.style.display = 'none';
+                    });
+            });
         })();
 
-        // ===== FLOATING PETALS =====
-        (function() {
-            var petalCount = 8;
-            var bodyEl = document.body;
-
-            for (var i = 0; i < petalCount; i++) {
+        // Floating Petals
+        (function () {
+            for (var i = 0; i < 8; i++) {
                 var petal = document.createElement('div');
                 petal.className = 'petal';
                 petal.innerHTML = '<svg width="15" height="15" viewBox="0 0 20 20"><path d="M10 0C6 0 2 4 2 10c0 4 4 8 8 10 4-2 8-6 8-10C18 4 14 0 10 0z"/></svg>';
                 petal.style.left = Math.random() * 100 + 'vw';
-                petal.style.top = -30 + 'px';
-
-                var duration = 8 + Math.random() * 12;
+                var dur = 8 + Math.random() * 12;
                 var delay = Math.random() * 15;
-                var swayAmount = 30 + Math.random() * 40;
-                var animName = 'petalFall' + i;
-
-                var keyframes = '@keyframes ' + animName + '{' +
-                    '0% { opacity: 0; transform: translateY(0) translateX(0) rotate(0deg); }' +
+                var sway = 30 + Math.random() * 40;
+                var keyframes = '@keyframes pf' + i + '{' +
+                    '0% { opacity: 0; transform: translateY(0) translateX(0) rotate(0); }' +
                     '10% { opacity: 0.35; }' +
-                    '25% { transform: translateY(25vh) translateX(' + (swayAmount * 0.3) + 'px) rotate(90deg); }' +
-                    '50% { transform: translateY(50vh) translateX(-' + (swayAmount * 0.2) + 'px) rotate(180deg); }' +
-                    '75% { transform: translateY(75vh) translateX(' + (swayAmount * 0.4) + 'px) rotate(270deg); opacity: 0.25; }' +
-                    '100% { transform: translateY(105vh) translateX(-' + (swayAmount * 0.1) + 'px) rotate(360deg); opacity: 0; }' +
-                '}';
-
-                var styleSheet = document.createElement('style');
-                styleSheet.textContent = keyframes;
-                document.head.appendChild(styleSheet);
-
-                petal.style.animation = animName + ' ' + duration + 's ' + delay + 's infinite linear';
-                bodyEl.appendChild(petal);
+                    '25% { transform: translateY(25vh) translateX(' + (sway * 0.3) + 'px) rotate(90deg); }' +
+                    '50% { transform: translateY(50vh) translateX(-' + (sway * 0.2) + 'px) rotate(180deg); }' +
+                    '75% { transform: translateY(75vh) translateX(' + (sway * 0.4) + 'px) rotate(270deg); opacity: 0.25; }' +
+                    '100% { transform: translateY(105vh) translateX(-' + (sway * 0.1) + 'px) rotate(360deg); opacity: 0; }' +
+                    '}';
+                var style = document.createElement('style');
+                style.textContent = keyframes;
+                document.head.appendChild(style);
+                petal.style.animation = 'pf' + i + ' ' + dur + 's ' + delay + 's infinite linear';
+                document.body.appendChild(petal);
             }
         })();
     </script>
 </body>
-</html>
 
+</html>
